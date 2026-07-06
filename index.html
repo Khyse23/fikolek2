@@ -1,58 +1,9 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Fikołek – Podwórko Terapii i Rozwoju</title>
-
-<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<header>
-<div class="navbar">
-
-    <div class="logo">
-        <svg width="38" height="38" viewBox="0 0 100 100">
-            <circle cx="50" cy="50" r="45" fill="#6b7280"/>
-            <circle cx="50" cy="50" r="30" fill="#9ca3af"/>
-            <circle cx="35" cy="40" r="6" fill="white"/>
-            <circle cx="65" cy="40" r="6" fill="white"/>
-            <path d="M35 65 Q50 80 65 65" stroke="white" stroke-width="5" fill="none"/>
-        </svg>
-        Fikołek
-    </div>
-
-    <div class="nav-links" id="menu">
-        <a href="#si">Integracja SI</a>
-        <a href="#diagnoza">Diagnoza</a>
-        <a href="#kontakt">Kontakt</a>
-    </div>
-
-    <div class="hamburger" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-
-</div>
-</header>
-
-<section class="hero">
-    <div>
-        <h1>Podwórko Terapii i Rozwoju</h1>
-        <p>Fikołek – profesjonalna terapia i diagnoza dzieci</p>
-        <a class="btn" href="#kontakt">Umów wizytę</a>
-    </div>
-</section>
-
 <section id="si">
     <h2 class="section-title">Integracja Sensoryczna (SI)</h2>
 
     <div class="info">
 
-        <strong>Profesjonalna diagnoza i terapia Integracji Sensorycznej</strong>
+        <p><strong>Profesjonalna diagnoza i terapia Integracji Sensorycznej</strong></p>
 
         <p>
         Prawidłowe przetwarzanie bodźców zmysłowych stanowi podstawę harmonijnego rozwoju dziecka.
@@ -68,7 +19,7 @@
         Dzięki współpracy specjalistów możliwe jest całościowe spojrzenie na rozwój dziecka oraz przygotowanie indywidualnych zaleceń do dalszej pracy.
         </p>
 
-        <strong>Oferujemy:</strong>
+        <p><strong>Oferujemy:</strong></p>
         <ul>
             <li>diagnozę Integracji Sensorycznej (SI)</li>
             <li>konsultacje z terapeutą SI</li>
@@ -78,7 +29,8 @@
             <li>współpracę z innymi specjalistami w celu kompleksowego wsparcia rozwoju dziecka</li>
         </ul>
 
-        <strong>Kiedy warto zgłosić się na konsultację?</strong>
+        <p><strong>Kiedy warto zgłosić się na konsultację?</strong></p>
+
         <p>
         Zapraszamy rodziców dzieci, u których obserwują Państwo m.in.:
         trudności z koncentracją uwagi, nadwrażliwość lub obniżoną wrażliwość na bodźce,
@@ -90,51 +42,3 @@
 
     </div>
 </section>
-
-<section id="diagnoza">
-    <h2 class="section-title">Diagnoza SI</h2>
-    <div class="info">
-        Diagnoza Integracji Sensorycznej obejmuje wywiad z rodzicami, obserwację dziecka oraz standaryzowane próby diagnostyczne dostosowane do jego wieku i możliwości. Po zakończeniu procesu rodzice otrzymują omówienie wyników oraz wskazówki dotyczące dalszego postępowania.
-    </div>
-
-    <div class="info" style="margin-top:20px;">
-        Jeżeli nie są Państwo pewni, czy dziecko wymaga pełnej diagnozy, zachęcamy do umówienia konsultacji ze specjalistą. Podczas spotkania omówimy zgłaszane trudności i wspólnie ustalimy, jaka forma wsparcia będzie najbardziej odpowiednia.
-    </div>
-</section>
-
-<section id="kontakt" class="contact">
-    <h2 class="section-title" style="color:white;">Kontakt</h2>
-
-    <form>
-        <input type="text" placeholder="Imię i nazwisko">
-        <input type="email" placeholder="E-mail">
-        <input type="tel" placeholder="Telefon">
-        <textarea rows="5" placeholder="Wiadomość"></textarea>
-        <button>Wyślij</button>
-    </form>
-</section>
-
-<footer>
-© 2026 Fikołek – Podwórko Terapii i Rozwoju
-</footer>
-
-<script>
-function toggleMenu(){
-    document.getElementById("menu").classList.toggle("active");
-}
-
-const sections=document.querySelectorAll("section");
-
-const observer=new IntersectionObserver(entries=>{
-    entries.forEach(e=>{
-        if(e.isIntersecting){
-            e.target.classList.add("show");
-        }
-    });
-},{threshold:0.15});
-
-sections.forEach(s=>observer.observe(s));
-</script>
-
-</body>
-</html>
