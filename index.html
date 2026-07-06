@@ -1,52 +1,152 @@
-<section id="si">
-    <h2 class="section-title">Integracja Sensoryczna (SI)</h2>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Fikołek – Podwórko Terapii i Rozwoju</title>
 
-    <div class="info">
+<link rel="stylesheet" href="style.css">
+</head>
 
-        <!-- 1 -->
-        <p><strong>Profesjonalna diagnoza i terapia Integracji Sensorycznej</strong></p>
+<body>
 
-        <!-- 2 -->
-        <h3>O terapii</h3>
-        <p>
-            Prawidłowe przetwarzanie bodźców zmysłowych stanowi podstawę harmonijnego rozwoju dziecka.
-            Trudności w tym zakresie mogą wpływać na funkcjonowanie w domu, przedszkolu i szkole,
-            utrudniając naukę, koncentrację, rozwój ruchowy oraz komunikację.
-        </p>
+<header>
+<div class="navbar">
 
-        <!-- 3 -->
-        <h3>Nasz zespół</h3>
-        <p>
-            W naszym gabinecie pracują doświadczeni terapeuci Integracji Sensorycznej oraz logopeda i neurologopeda.
-            Dzięki współpracy specjalistów zapewniamy kompleksowe podejście do rozwoju dziecka.
-        </p>
+    <div class="logo">
+        <svg width="40" height="40" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="45" fill="#6b7280"/>
+            <circle cx="50" cy="50" r="30" fill="#9ca3af"/>
+            <circle cx="35" cy="40" r="6" fill="white"/>
+            <circle cx="65" cy="40" r="6" fill="white"/>
+            <path d="M35 65 Q50 80 65 65" stroke="white" stroke-width="5" fill="none"/>
+        </svg>
 
-        <!-- 4 -->
-        <h3>Zakres wsparcia</h3>
-        <ul>
-            <li>diagnoza Integracji Sensorycznej (SI)</li>
-            <li>terapia SI</li>
-            <li>konsultacje terapeutyczne</li>
-            <li>konsultacje logopedyczne i neurologopedyczne</li>
-            <li>indywidualne zalecenia dla rodziców</li>
-        </ul>
+        Fikołek
+    </div>
 
-        <!-- 5 -->
-        <h3>Kiedy warto zgłosić się na konsultację?</h3>
-        <p>
-            Zapraszamy rodziców dzieci, u których obserwuje się:
-            trudności z koncentracją, nadwrażliwość lub obniżoną wrażliwość na bodźce,
-            problemy z równowagą i koordynacją, opóźnienia rozwoju motorycznego,
-            trudności w planowaniu ruchu, samoobsłudze oraz komunikacji,
-            a także wybiórczość pokarmową lub silne reakcje na dźwięki, dotyk czy ruch.
-        </p>
+    <nav id="menu" class="nav-links">
+        <a href="#si">SI</a>
+        <a href="#diagnoza">Diagnoza</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
 
-        <!-- 6 -->
-        <h3>Konsultacja</h3>
-        <p>
-            Jeżeli nie są Państwo pewni, czy dziecko wymaga diagnozy,
-            zapraszamy na konsultację. Wspólnie dobierzemy najlepszą formę wsparcia.
-        </p>
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+    </div>
+
+</div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Podwórko Terapii i Rozwoju</h1>
+        <p>Nowoczesna terapia Integracji Sensorycznej, logopedia i diagnostyka rozwoju dziecka.</p>
+        <a class="btn" href="#kontakt">Umów wizytę</a>
+    </div>
+</section>
+
+<!-- SI -->
+<section id="si" class="section">
+
+    <div class="section-header">
+        <div class="icon">
+            🧠
+        </div>
+        <h2>Integracja Sensoryczna (SI)</h2>
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>O terapii</h3>
+            <p>
+                Prawidłowe przetwarzanie bodźców zmysłowych stanowi podstawę rozwoju dziecka.
+                Trudności wpływają na naukę, emocje i codzienne funkcjonowanie.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Zespół specjalistów</h3>
+            <p>
+                Terapeuci SI, logopeda i neurologopeda pracują wspólnie,
+                aby zapewnić kompleksowe wsparcie dziecka.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Zakres wsparcia</h3>
+            <ul>
+                <li>Diagnoza SI</li>
+                <li>Terapia SI</li>
+                <li>Konsultacje specjalistyczne</li>
+                <li>Logopedia i neurologopedia</li>
+            </ul>
+        </div>
+
+        <div class="card highlight">
+            <h3>Kiedy zgłosić się?</h3>
+            <p>
+                Trudności z koncentracją, nadwrażliwość sensoryczna,
+                problemy z równowagą, mową i koordynacją.
+            </p>
+        </div>
 
     </div>
 </section>
+
+<!-- DIAGNOZA -->
+<section id="diagnoza" class="section">
+
+    <div class="section-header">
+        <div class="icon">📋</div>
+        <h2>Diagnoza SI</h2>
+    </div>
+
+    <div class="card full">
+        <p>
+            Diagnoza obejmuje wywiad z rodzicami, obserwację dziecka oraz testy standaryzowane.
+            Po zakończeniu procesu rodzice otrzymują pełne omówienie i zalecenia terapeutyczne.
+        </p>
+    </div>
+
+    <div class="card full soft">
+        <p>
+            Jeśli nie mają Państwo pewności, czy dziecko wymaga diagnozy,
+            zapraszamy na konsultację wstępną.
+        </p>
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="kontakt" class="section contact">
+
+    <div class="section-header">
+        <div class="icon">📞</div>
+        <h2>Kontakt</h2>
+    </div>
+
+    <form>
+        <input type="text" placeholder="Imię i nazwisko">
+        <input type="email" placeholder="E-mail">
+        <input type="tel" placeholder="Telefon">
+        <textarea rows="5" placeholder="Wiadomość"></textarea>
+        <button>Wyślij</button>
+    </form>
+
+</section>
+
+<footer>
+© 2026 Fikołek – Podwórko Terapii i Rozwoju
+</footer>
+
+<script>
+function toggleMenu(){
+    document.getElementById("menu").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
